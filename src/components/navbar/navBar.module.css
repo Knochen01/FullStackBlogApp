@@ -11,6 +11,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   flex: 1;
   text-align: center;
+  cursor: pointer;
 }
 
 .social {
@@ -21,7 +22,40 @@
 .links {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   flex: 1;
   font-size: 20px;
+}
+
+@media screen and (max-width: 1224px) {
+  .logo {
+    font-size: 32px;
+  }
+  .links {
+    font-size: 18px;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .social {
+    display: none;
+  }
+  .logo {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .links {
+    justify-content: flex-end;
+  }
+  .link {
+    display: none;
+  }
 }

@@ -13,12 +13,20 @@ export default function NavBar() {
         <Image src={"/instagram.png"} alt="instagram" width={24} height={24} />
         <Image src={"/youtube.png"} alt="youtube" width={24} height={24} />
       </div>
-      <div className={styles.logo}>Marians Blog</div>
+      <div className={styles.logo}>
+        <Link href={"/"}>Marians Blog</Link>
+      </div>
       <div className={styles.links}>
         <ThemeToggle />
-        <Link href={"/"}>Homepage</Link>
-        <Link href={"/"}>Contact</Link>
-        <Link href={"/"}>About</Link>
+        <Link href={"/"} className={styles.link}>
+          Homepage
+        </Link>
+        <Link href={"/"} className={styles.link}>
+          Contact
+        </Link>
+        <Link href={"/"} className={styles.link}>
+          About
+        </Link>
         <AuthLinks />
       </div>
     </nav>
