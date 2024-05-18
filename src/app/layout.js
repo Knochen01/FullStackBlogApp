@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
               <div className={"wrapper"}>
                 <NavBar />
                 {children}
-                {/* <Footer /> */}
+                <Footer />
               </div>
             </div>
           </ThemeProvider>

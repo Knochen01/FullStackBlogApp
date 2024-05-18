@@ -1,2 +1,103 @@
 .container {
+  flex: 2;
+  margin-top: 60px;
+}
+
+.subTitle {
+  font-size: 16px;
+  color: gray;
+  font-weight: 400;
+}
+.title {
+  font-size: 28px;
+}
+.imageContainer {
+  flex: 1;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.textContainer {
+  margin-left: 10px;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.postTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--softTextColor);
+}
+.detail {
+  display: flex;
+  font-size: 12px;
+}
+.date {
+  color: gray;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  border: 3px solid lightgray;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.category {
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: white;
+}
+.travel {
+  background-color: #ff7875;
+  max-width: max-content;
+}
+.food {
+  background-color: #ffb14f;
+  max-width: max-content;
+}
+.culture {
+  background-color: #ff7887;
+  max-width: max-content;
+}
+.coding {
+  background-color: #789cff;
+  max-width: max-content;
+}
+
+.fashion {
+  background-color: #775aec;
+  max-width: max-content;
+}
+.style {
+  background-color: #7fb881;
+  max-width: max-content;
+}
+.categoryList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+.categoryItem {
+  padding: 10px 15px;
+  color: var(--textColor);
+  border-radius: 10px;
+  font-size: 14px;
 }

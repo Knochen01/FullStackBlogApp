@@ -1,5 +1,6 @@
 .container {
   margin-top: 30px;
+  text-align: left;
 }
 .title {
   font-size: 60px;
@@ -41,4 +42,26 @@
   border: none;
   border-radius: 5px;
   width: max-content;
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+  .container {
+    text-align: center;
+  }
+  .imageContainer {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .button {
+    width: auto;
+  }
 }
