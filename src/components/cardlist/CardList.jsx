@@ -1,6 +1,6 @@
 import Pagination from "../pagination/Pagination";
 import styles from "./cardlist.module.css";
-import SinglePost from "../card/Card";
+
 import Card from "../card/Card";
 
 export default function CardList() {
