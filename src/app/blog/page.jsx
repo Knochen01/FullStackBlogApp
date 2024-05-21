@@ -7,7 +7,6 @@ export default function page() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Style Blog</h1>
-      <h1>Recent Posts</h1>
 
       <div className={styles.content}>
         <CardList />
