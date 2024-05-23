@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function AuthLinks() {
   const [open, setOpen] = useState(false);
   // Temporary Data
-  const status = "notauthentifddicated";
+  const status = "notauthfffentifddicated";
 
   return (
     <>
