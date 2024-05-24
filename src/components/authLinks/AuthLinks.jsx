@@ -2,16 +2,16 @@
 import Link from "next/link";
 import styles from "./authLinks.module.css";
 import { useState } from "react";
-import { signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 export default function AuthLinks() {
   const [open, setOpen] = useState(false);
-  // Temporary Data
-  const status = "notauthfffentifddicated";
+
+  const { status } = useSession();
 
   return (
     <>
-      {status === "notauthentifddicated" ? (
+      {status === "unauthenticated" ? (
         <Link href={"/login"} className={styles.links}>
           Login
         </Link>
@@ -42,7 +42,7 @@ export default function AuthLinks() {
           <Link href={"/"} className={styles.link}>
             About
           </Link>
-          {status === "notauthentifddicated" ? (
+          {status === "unauthenticated" ? (
             <Link href={"/login"}>Login</Link>
           ) : (
             <>
