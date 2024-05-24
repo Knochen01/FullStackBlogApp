@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 export const Page = () => {
   const { data, status } = useSession();
-  console.log(data, status);
+  console.log("data = ", data, "status = ", status);
 
   const router = useRouter();
 
